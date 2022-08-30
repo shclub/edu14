@@ -15,7 +15,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: ""
+  storageClass: "nfs-client"
 
 ## @section Common parameters
 ##
@@ -427,15 +427,13 @@ primary:
     ## @param primary.persistence.existingClaim Name of an existing `PersistentVolumeClaim` for MariaDB primary replicas
     ## NOTE: When it's set the rest of persistence parameters are ignored
     ##
-    
     ## nfs 사용함으로 주석 처리
-    existingClaim: "mariadb-pvc"
+    #existingClaim: ""
     ## @param primary.persistence.subPath Subdirectory of the volume to mount at
     ##
     
     #subPath: ""
-    subPath: edu1/my-mariadb
-
+    subPath: my-mariadb
     ## @param primary.persistence.storageClass MariaDB primary persistent volume storage Class
     ## If defined, storageClassName: <storageClass>
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
@@ -444,7 +442,7 @@ primary:
     ##   GKE, AWS & OpenStack)
     ##
     # pod 에서 연동
-    #storageClass: ""
+    #storageClass: "nfs-client"
     ## @param primary.persistence.annotations MariaDB primary persistent volume claim annotations
     ##
     annotations: {}
