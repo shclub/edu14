@@ -34,7 +34,7 @@ storageClass:
   allowVolumeExpansion: true
 
   # Method used to reclaim an obsoleted volume
-  reclaimPolicy: Retain
+  reclaimPolicy: Delete
 
   # When set to false your PVs will not be archived by the provisioner upon deletion of the PVC.
   archiveOnDelete: false 
@@ -78,7 +78,7 @@ podAnnotations: {}
 # priorityClassName: ""
 
 podSecurityContext:
-  fsGroup: 1000660000 #1001 
+  fsGroup: 1000660000 #1001 k3s는 1001
 
 securityContext: {}
 
