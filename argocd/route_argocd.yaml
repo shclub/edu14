@@ -8,7 +8,7 @@ metadata:
   name: argocd-server-route
   namespace: argocd
 spec:
-  host: argocd.apps.ktis-console.c01-okd4.cz-tb.paas.kt.co.kr
+  host: argocd.apps.test.co.kr
   port:
     targetPort: https
   tls:
