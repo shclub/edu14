@@ -8,7 +8,7 @@ metadata:
   name: argocd-server-route
   namespace: argocd
 spec:
-  host: argocd.apps.test.co.kr
+  host: argocd-argocd.apps.211-34-231-82.nip.io
   port:
     targetPort: https
   tls:
