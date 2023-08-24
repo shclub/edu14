@@ -513,7 +513,7 @@ persistence:
     disableredirect: false
     ## @param persistence.imageChartStorage.type The type of storage for images and charts: `filesystem`, `azure`, `gcs`, `s3`, `swift` or `oss`. The type must be `filesystem` if you want to use persistent volumes for registry. Refer to the [guide](https://github.com/docker/distribution/blob/master/docs/configuration.md#storage) for more information about the detail
     ##
-    type: filesystem
+    type: s3 # filesystem
     ## Images/charts storage parameters when type is "filesystem"
     ## @param persistence.imageChartStorage.filesystem.rootdirectory Filesystem storage type setting: Storage root directory
     ## @param persistence.imageChartStorage.filesystem.maxthreads Filesystem storage type setting: Maximum threads directory
@@ -570,8 +570,8 @@ persistence:
     s3:
       region: ap-northeast-2 # us-west-1
       bucket: harbor-registry 
-      accesskey: "xs2BgRSPcVtNa48PoiNd"
-      secretkey: "7A2HdVfVuJ0fkUbvVPaUJSSrfc0i6aFr6Xmge58K"
+      accesskey: "xs2Bg******"
+      secretkey: "7A2HdVfVuJ0fkUb*****"
       regionendpoint: "http://my-minio.minio.svc.cluster.local:9000"
       encrypt: ""
       keyid: ""
