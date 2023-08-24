@@ -292,8 +292,8 @@ persistence:
       # keys in the secret should be REGISTRY_STORAGE_S3_ACCESSKEY and REGISTRY_STORAGE_S3_SECRETKEY for registry
       region: ap-northeast-2 # us-west-1
       bucket: harbor-registry
-      accesskey: "xs2BgRSPcVtNa48PoiNd"
-      secretkey: "7A2HdVfVuJ0fkUbvVPaUJSSrfc0i6aFr6Xmge58K"
+      accesskey: "xs2BgRSPcV********"
+      secretkey: "7A2HdVfVuJ0f********"
       regionendpoint: "http://my-minio.minio.svc.cluster.local:9000"
       #existingSecret: ""
       #region: us-west-1
